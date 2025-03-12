@@ -4,6 +4,6 @@
 
 hallllooooo
 
-[Pagina 1](https://website-name.com 'Link title')
-[Pagina 2](https://website-name.com 'Link title')
-[Pagina 3](https://website-name.com 'Link title')
+[Pagina 1](SvenVanDerMeij.github.io/Pages/Page 1)
+[Pagina 2](SvenVanDerMeij.github.io/Pages/Page 2)
+[Pagina 3](SvenVanDerMeij.github.io/Pages/Page 3)
