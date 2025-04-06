@@ -76,25 +76,25 @@ nav > ul{
     border: 5px solid #CABA9C;
     border-radius: 5px;
    }
-  .CoolCard{
+  .coolCard{
     border: 15px solid #CABA9C;
     border-radius: 15px;
     width: 650px;
     margin-top: 20px;
   }
-  .CoolCard > img{
+  .coolCard > img{
     width: 150px;
     height: 150px;
     float: left;
   }
 
-  .CoolCard > p{
+  .coolCard > p{
     height: 150px;
     background-color: #8A6240;
     font-size: 50px;
     text-align: left;
   }
-  .CoolCard:hover{
-    transform: scale(1.1);
+  .coolCard:hover{
+    transform: scale(1.08);
     transition: 1s;
   }
