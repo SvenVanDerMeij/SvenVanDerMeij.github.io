@@ -1,5 +1,57 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    border: 0;
+    z-index: 1;
   }
+
+  body{
+    background-color: #789cff;
+    margin: 0;
+    
+  }
+  header{
+    height: 10vh;
+  }
+  footer{
+    
+   display: flex;
+  left: 0;
+  width: 100%;
+  }
+  article{
+    width: 80vw;
+    background-color: #5d2b2b;
+    margin: 0 auto;
+    padding: 40px;
+    height: 2000px;
+  }
+  article > p{
+    margin-bottom: 20px;
+  }
+  .grass {
+    position: fixed;
+    bottom:0;
+   height: 50%;
+   width: 100%;
+   z-index: 2;
+}
+.floatRight {
+  float: right; 
+  margin-right: 15px;
+  border: 5px solid #CABA9C;
+  border-radius: 5px;
+ }
+ .floatLeft {
+  float: left; 
+  margin-right: 15px;
+  border: 5px solid #CABA9C;
+  border-radius: 5px;
+ }
+ .antHill{
+  bottom: 30px;
+  right: 150px;
+  position: fixed;
+  z-index: 3;
+ }
+ 

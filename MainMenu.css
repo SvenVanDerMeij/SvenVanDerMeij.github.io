@@ -70,7 +70,7 @@ nav > ul{
   article > ul{
     list-style-type: none;
   }
-  .wrap {
+  .float {
     float: right; 
     margin: 5px;
     border: 5px solid #CABA9C;
