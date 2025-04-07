@@ -12,7 +12,18 @@
   }
   header{
     height: 10vh;
+    font-size:xx-large;
+    top: 20px;
   }
+  header > p{
+    color: #FFFFFF;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
   footer{
     
    display: flex;
@@ -21,10 +32,10 @@
   }
   article{
     width: 80vw;
-    background-color: #5d2b2b;
+    background-color: #784134;
     margin: 0 auto;
     padding: 40px;
-    height: 2000px;
+    
   }
   article > p{
     margin-bottom: 20px;
@@ -49,9 +60,15 @@
   border-radius: 5px;
  }
  .antHill{
-  bottom: 30px;
+  border: 3px #FFFFFF;
+  bottom: 25px;
   right: 150px;
   position: fixed;
   z-index: 3;
  }
+
+ .antHill:hover{
+  transform: scale(1.08);
+  transition: 1s;
+}
  

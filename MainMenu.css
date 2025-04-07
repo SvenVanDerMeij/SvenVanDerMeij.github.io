@@ -15,7 +15,7 @@ header{
 }
 
 body{
-    background-image: url("Dirt.jpg");
+    background-image: url("Images/Dirt.jpg");
 }
 
 nav{
@@ -66,6 +66,9 @@ nav > ul{
     background-color: #4D2D18;
     margin: 0 auto;
     padding: 40px;
+  }
+  article > p{
+    color: #FFFFFF;
   }
   article > ul{
     list-style-type: none;
