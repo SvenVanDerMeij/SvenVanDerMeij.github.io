@@ -7,73 +7,75 @@
 <body>
     <header>
     <p>
-        Grote Projecten
-        
+        Big projects        
     </p>
     </header>
 <article>
-    De grote projecten die ik wou laten zien zijn Cuphead vertical slice en Frog tower defense.
+    The big projects i want to talk about are cuphead vertical slice, and frog tower defense.
     <h1>
-        Cuphead vertical slice
+        <a href="https://github.com/MarcosMartinsCarvalho/Vertical-slice-Cuphead">
+            Cuphead vertical slice
+            </a>
     </h1>
     <p>
-        Cuphead vertical slice was een opdracht waar wij als groep een 10 seconden clip van de 2017 hit indie game zo goed mogelijk na moesten maken. In het groepje van 3 waren mijn contributies hieraan de boss, de beweging van de platforms, en hoe het animatie systeem werkt.
+        Cuphead vertical slice was an assignment where you as a group had to recreate a 10 second clip from the 2017 indie game cuphead
+         to the best of your abilities.I want to showcase 3 of my contributions to the project, the boss, the movement of the platforms, and the animation system.
     </p>
     <h4>
-        De boss
+        The boss
     </h4>
     <div class="floatRight">
-        <img src="Images/VisualSheetCuphead.jpg" width="500" height="300">
+        <img src="Images/VisualSheetCupheadEn.jpg" width="500" height="300">
     </div>
     <p>
-        Voor de bossfight heb ik de ai gemaakt voor de boss, uitgebeeld hier in de visual sheet. Hieronder zal ik het hebben over hoe de platforms zelf werken
-        maar voor nu kan ik wat code laten zien.
+        I've made the ai for the boss explained in the image on the right, I'll talk about the ai for the platforms later, 
+        but first I'll show the code for the boss itself.
     </p>
        
         <img class="funnyBorder" src="Images/CupheadBossCode.png" width="400" height="200px">
 <p>
-        waarin te zien is dat ik de hoogte van de boss heb gedaan met een simpele sinusgolf, waardoor hij vlot maar rustig omhoog en omlaag blijft gaan. Het Bonus deel hieraan zorgt ervoor dat als de boss geen health meer heeft, hij zal zakken, waar hij zal verdwijnen en de speler wint.
+        Here you can see that I did the Boss' vertical movement with a simple sine wave, making him gently bob up and down, je "Bonus"
+        varable makes it so that when the boss loses all it's health, the bonus drops below zero, making the boss plummet, and making the player win.
     </p>
     <h4>
-        De platforms
+        The platforms
     </h4>
     <div class="floatRight">
         <img src="Images/CupheadPlatformCode.png" >
     </div>
     <p>
-        De platforms werken simpel, aan het begin nemen ze allemaal hun huidige y-positie op, daarna
-        bewegen ze constant langzaam omhoog en omlaag, ook met een sinusgolf, wanneer ze geraakt worden door een vuurbal vallen ze
-        totdat ze net offscreen zijn. Op dat punt begint er een timer op te tellen, wanneer deze timer 4 seconden aantikt komt het platform 
-        weer omhoog totdat hun y-positie hetzelfde is als de y-positie die ze aan het begin opnamen, en gaan ze weer in een staat waar
-        de speler op ze kan staan, en ze weer geraakt kunnen worden door de boss.
-        
+        The platforms are very simple, they start by checking their own y-position, and saving that, after that they're constantly moving
+        up and down with a less intense sine wave. When hit with a fireball, they fall off screen, at which point a timer starts counting up
+        when this timer hits 4 seconds, the platform comes back up, until they've reached the y-position saved at the start. When they're back 
+        at their original positions, they become hittable again by the boss' fireball, and the player can jump on them again.        
     </p>
     <h4>
-        De animatie
+        The animation
     </h4>
     <p>
-        De animatie van cuphead gaf ons team wat problemen totdat ik met mijn oplossing kwam. Het probleem was dat cuphead een animatie
-        heeft voor lopen, een animatie voor schieten, een animatie voor springen, en een animatie voor stil staan, alleen cuphead moet 
-        ook kunnen springen en schieten, of lopen en schieten, en die animaties overlapte vaak, de game kreeg tegelijkertijd te horen:
-        "loop", "loop en schiet" en "schiet". Mijn oplossing die ik hierop gaf is dat we een binair systeem implementeren, de int die 
-        de animatie bestuurd begint op 0, wanneer cuphead stli staat, niet springt, en niet schiet. Die 3 acties zijn allemaal een bit
-        in dit systeem. springen is 4, schieten is 2, lopen is 1. wanneer je begint te lopen wordt 1 toegevoegd aan de animatie int,
-        zelfde met 2 op schieten en 4 op springen. dus stel cuphead springt en loopt, dan wordt 4 voor springen en 1 voor lopen toegevoegd
-        aan de int. Vervolgens leest de animator dat de animatie int 5 is, en speelt het dus de animatie af voor lopen en springen.
-        Als dit nogsteeds onduidelijk is heb ik hieronder een visual sheet gemaakt om het verder uit te leggen.
+        The player's animation gave us a bit of trouble until I came up with a solution. The problem came from the fact that cuphead has 
+        an animation for walking, jumping, shooting, and walking and shooting, and those animations overlapped a lot of the time. It wasn't uncommon for the game
+        to play the walking animation, then jump, but because you were still moving mid air, the walking animation would play. My solution
+        was to implement a binary system, where jumping, shooting and walking were each a bit in a 3-bit sequence, the first bit(4) being jumping, the second(2) beingshooting
+        and the third bit (1) being walking. When you start walking, the walking bit adds 1 to the animation integer, along with the other
+        two bits and their respective value, for example if the player is walking and jumping at the same time, the integer will be 4+1=5
+        and thus the corresponding animation plays, being the "walking while jumping" animation. If this is still unclear, I hope the 
+        image I made below will clear things up.
         </p>
-        <img class="funnyBorder" src="Images/cupheadVisuallSheet.png">
+        <img class="funnyBorder" src="Images/cupheadVisuallSheet.png" width="600" height="410">
     <h1>
-        Frog tower defense
+        <a href="https://github.com/SvenVanDerMeij/TowerDefenseJaar2M1">
+            Frog tower defense
+            </a>
     </h1>
     <p>
-        voor frog tower defense was een opdracht die we moesten maken waar de opdracht was om een tower defense game te maken.
-        ik besloot een variatie toe te passen op de formule die ik nooit eerder heb gezien in een tower defense, in plaats van dat je wilt
-        voorkomen dat de enemies naar het einde komen, wilde ik doen dat je wilt dat de enemies naar twee punten kunnen gaan, en het als speler
-        het doel is om ze naar de goede uitgang te leiden. Ik vooral laten zien hoe de enemies bewegen, ik heb al uitgelegd hoe de gameplay
-        werkt, en verder is het een best standaard tower defense game.
-    </p>
-    <img class="funnyBorder" src="Images/FrogReelNL.jpg" width="960" height="540">
+        Frog tower defense was an assignment where we had to make a tower defense game, simple as that. I decided to make a variation
+        of what you would expect from a typical tower defense. Instead of trying to defeat the enemies before they reach the end, I 
+        made the map have two exits, a good one and a bad one, where the objective for the player is to redirect the enemies towards the 
+        good exit, losing lives when they go into the bad exit. The only other thing I want to show off is how the enemies move, which you can see in the image below. Every other
+        aspect is a typical tower defense.
+         </p>
+    <img class="funnyBorder" src="Images/FrogReelEn.jpg" width="960" height="540">
     <p>
 
     </p>
@@ -81,7 +83,7 @@
 
 
 </body>
-<a href="index.html">
+<a href="IndexEn.html">
 <img class="antHill" src="Images/AnthillOutline.png" width="150" height="150">
 </a>
 <img class="grass" src="Images/Grass.png" alt="gras">
