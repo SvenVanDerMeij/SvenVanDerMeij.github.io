@@ -43,13 +43,18 @@
   .grass {
     position: fixed;
     bottom:0;
-   height: 50%;
+   height: 35%;
    width: 100%;
    z-index: 2;
+   margin-top: 50px;
 }
 .floatRight {
   float: right; 
   margin-right: 15px;
+  border: 5px solid #CABA9C;
+  border-radius: 5px;
+ }
+ .funnyBorder{
   border: 5px solid #CABA9C;
   border-radius: 5px;
  }
@@ -61,7 +66,7 @@
  }
  .antHill{
   border: 3px #FFFFFF;
-  bottom: 25px;
+  bottom: 0px;
   right: 150px;
   position: fixed;
   z-index: 3;
