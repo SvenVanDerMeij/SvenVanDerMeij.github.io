@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+article{
+    width: 80vw;
+    background-color: #4D2D18;
+    margin: 0 auto;
+    padding: 40px;
+  }
+
+  body{
+    background-image: url("Images/Dirt.jpg");
+}
+a{
+    text-decoration: none;
+    color: #186d51;
+}
+article > p{
+    color: #FFFFFF;
+  }
+.antLink{
+    bottom: 0px;
+    right: 150px;
+    position: fixed;
+    z-index: 3;
+   }
+  
+   .antLink:hover{
+    transform: scale(1.08);
+    transition: 1s;
+  }
+   
+   .float {
+    float: right; 
+    margin: 5px;
+    border: 5px solid #CABA9C;
+    border-radius: 5px;
+    margin-bottom: 0;
+   }
+
+   .coolCard{
+    border: 15px solid #CABA9C;
+    border-radius: 15px;
+    width: 650px;
+    margin-top: 20px;
+  }
+  .coolCard > img{
+    width: 150px;
+    height: 150px;
+    float: left;
+    
+  }
+
+  .coolCard > p{
+    height: 150px;
+    background-color: #8A6240;
+    font-size: 50px;
+    text-align: left;
+  }
+  .coolCard:hover{
+    transform: scale(1.08);
+    transition: 1s;
+  }
+  .compressed{
+    width: 50vw;
+  }
+  article > ul{
+    list-style-type: none;
+  }
