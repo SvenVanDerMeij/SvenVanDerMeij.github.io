@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <head>
     <link rel="stylesheet" href="AntNest.css">
 </head>
@@ -14,7 +14,7 @@
     </article>
 </body>
 
-<a href="index.html">
+<a href="IndexEn.html">
     <img class="antLink" src="Images/DapperAntLink.png" width="320" height="192">
     </a>
 </html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <link rel="stylesheet" href="AntNest.css">
+</head>
+<article>
+<body>
+<h1>
+    <a href="https://github.com/MarcosMartinsCarvalho/Vertical-slice-Cuphead">
+        Cuphead vertical slice
+        </a>
+</h1>
+<p>
+    Cuphead vertical slice was an assignment where you as a group had to recreate a 10 second clip from the 2017 indie game cuphead
+     to the best of your abilities.I want to showcase 3 of my contributions to the project, the boss, the movement of the platforms, and the animation system.
+</p>
+<h4>
+    The boss
+</h4>
+<div class="floatRight">
+    <img src="Images/VisualSheetCupheadEn.jpg" width="500" height="300">
+</div>
+<p>
+    I've made the ai for the boss explained in the image on the right, I'll talk about the ai for the platforms later, 
+    but first I'll show the code for the boss itself.
+</p>
+   
+    <img class="funnyBorder" src="Images/CupheadBossCode.png" width="400" height="200px">
+<p>
+    Here you can see that I did the Boss' vertical movement with a simple sine wave, making him gently bob up and down, je "Bonus"
+    varable makes it so that when the boss loses all it's health, the bonus drops below zero, making the boss plummet, and making the player win.
+</p>
+<h4>
+    The platforms
+</h4>
+<div class="floatRight">
+    <img src="Images/CupheadPlatformCode.png" >
+</div>
+<p>
+    The platforms are very simple, they start by checking their own y-position, and saving that, after that they're constantly moving
+    up and down with a less intense sine wave. When hit with a fireball, they fall off screen, at which point a timer starts counting up
+    when this timer hits 4 seconds, the platform comes back up, until they've reached the y-position saved at the start. When they're back 
+    at their original positions, they become hittable again by the boss' fireball, and the player can jump on them again.        
+</p>
+<h4>
+    The animation
+</h4>
+<p>
+    The player's animation gave us a bit of trouble until I came up with a solution. The problem came from the fact that cuphead has 
+    an animation for walking, jumping, shooting, and walking and shooting, and those animations overlapped a lot of the time. It wasn't uncommon for the game
+    to play the walking animation, then jump, but because you were still moving mid air, the walking animation would play. My solution
+    was to implement a binary system, where jumping, shooting and walking were each a bit in a 3-bit sequence, the first bit(4) being jumping, the second(2) beingshooting
+    and the third bit (1) being walking. When you start walking, the walking bit adds 1 to the animation integer, along with the other
+    two bits and their respective value, for example if the player is walking and jumping at the same time, the integer will be 4+1=5
+    and thus the corresponding animation plays, being the "walking while jumping" animation. If this is still unclear, I hope the 
+    image I made below will clear things up.
+    </p>
+    <img class="funnyBorder" src="Images/cupheadVisuallSheet.png" width="600" height="410">
+</p>
+        
+<h1>
+</article>
+</body>
+
+<a href="index.html">
+<img class="antLink" src="Images/DapperAntLink.png" width="320" height="192">
+</a>
+</html>

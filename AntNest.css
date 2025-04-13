@@ -20,6 +20,14 @@ a{
 article > p{
     color: #FFFFFF;
   }
+  h1{
+    font-size: xx-large;
+    color: #25a46b;
+  }
+  h4{
+    font-size: x-large;
+    color: #25a46b;
+  }
 .antLink{
     bottom: 0px;
     right: 150px;
