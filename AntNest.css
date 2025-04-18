@@ -39,6 +39,17 @@ article > p{
     transform: scale(1.08);
     transition: 1s;
   }
+
+  .gitLink{
+   top: 0;
+    right: 200px;
+    position: fixed;
+    z-index: 3;
+  }
+  .gitLink:hover{
+    transform: scale(1.15);
+    transition: 1s;
+  }
    
    .float {
     float: right; 

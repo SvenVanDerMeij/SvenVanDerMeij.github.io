@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="MainMenu.css">
+  <script src="SideBar.js"></script>
 </head>
 <header>
   <nav>
@@ -17,7 +18,24 @@
                 
 </header>
 <body>  
-  <script src="FadeIn.js"></script>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+    <a href="AboutMe.html">Over mij</a>
+    <a href="BigProjects.html">Grote Projecten</a>
+    <a href="Contact.html">Contact</a>
+    <a href="CupheadNL.html">Cuphead vertical slice</a>
+    <a href="FrogArmyNL.html">Frog Army</a>
+    <a href="favouriteGamesNL.html">Favoriete games</a>
+    <a href="SpriteWorkNL.html">Sprite work</a>
+    <a href="JavaScriptNL.html">JavaScript</a>
+    <a href="videoEditingNL.html">Video editing</a>
+    <a href="UnityProjectsNL.html">Unity projecten</a>
+  </div>
+  
+  <div class="OpenButton" onclick="openNav()">
+    <span style="font-size:30px;cursor:pointer" > alle <br> paginas</span>
+  </div>
   <article>    
     <div class="float">
       <img src="Images/AntNest.jpg" alt="ant nest" width="400" height="400"/>
