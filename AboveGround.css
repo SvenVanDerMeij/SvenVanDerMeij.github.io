@@ -67,6 +67,10 @@
   border: 5px solid #CABA9C;
   border-radius: 5px;
  }
+ .floatLeft > p {
+  color: #FFFFFF;
+  background-color: #CABA9C;
+ }
  .antHill{
   border: 3px #FFFFFF;
   bottom: 0px;
@@ -79,4 +83,8 @@
   transform: scale(1.08);
   transition: 1s;
 }
- 
+ embed {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+ }
