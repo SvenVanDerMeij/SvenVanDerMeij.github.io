@@ -1,14 +1,32 @@
+@font-face {
+    font-family: FootLight;
+    src: url(footlight-mt-pro/FootlightMTProLight.otf);
+  }
+
 *{
     padding: 0;
     margin: 0;
     border: 0;
     z-index: 1;
+    font-family: FootLight;
+  }
+  .floatLeft > img{
+    margin-bottom: -4px;
+    padding-bottom: 0px;
+  }
+
+  .floatRight > img{
+    margin-bottom: -4px;
+    padding-bottom: 0px;
   }
 
   body{
-    background-color: #789cff;
+    background-color: #0f65a1;
     margin: 0;
     
+  }
+  div{
+    height: auto;
   }
   header{
     height: 10vh;
@@ -32,13 +50,15 @@
   }
   article{
     width: 80vw;
-    background-color: #784134;
+    background-color: #4c3329;
     margin: 0 auto;
     padding: 40px;
+    padding-bottom: 30px;
     
   }
   article > p{
     margin-bottom: 20px;
+    color: #ffffff;
   }
   .smallticle{
     width: 50vw;
@@ -53,23 +73,29 @@
 }
 .floatRight {
   float: right; 
-  margin-right: 15px;
-  border: 5px solid #CABA9C;
+  margin-right: 5px;
+  padding-right: 10 px;
+  border: 5px solid #6A4A3C;
   border-radius: 5px;
+  margin-left: 20px;
  }
  .funnyBorder{
-  border: 5px solid #CABA9C;
+  border: 5px solid #6A4A3C;
   border-radius: 5px;
  }
  .floatLeft {
   float: left; 
   margin-right: 15px;
-  border: 5px solid #CABA9C;
+  border: 5px solid #6A4A3C;
   border-radius: 5px;
+  
  }
  .floatLeft > p {
   color: #FFFFFF;
-  background-color: #CABA9C;
+  background-color: #6A4A3C;
+  margin: 0px !important;
+  padding: 0px !important;
+  font-size:large; 
  }
  .antHill{
   border: 3px #FFFFFF;

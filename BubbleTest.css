@@ -1,0 +1,64 @@
+body {
+  background-color: #fdf6e3;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+.ant-nest {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.bubble {
+    z-index: 1;
+  position: absolute;
+  background: #8b4513;
+  border: 2px solid #8b4513;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bubble.text {
+  top: 20%;
+  left: 30%;
+  width: 140px;
+  height: 140px;
+}
+
+.bubble.image {
+z-index: 3;
+  top: 60%;
+  left: 45%;
+  width: 180px;
+  height: 180px;
+}
+
+.bubble.video {
+  top: 40%;
+  left: 70%;
+  width: 160px;
+  height:200px;
+}
+
+.tunnel {
+  position: absolute;
+  height: 20px;
+  background: #8b4513;
+  transform-origin: left center;
+  z-index: 0;
+}
+
+img, video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}

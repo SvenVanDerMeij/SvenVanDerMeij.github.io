@@ -1,8 +1,21 @@
+@font-face {
+    font-family: FootLight;
+    src: url(footlight-mt-pro/FootlightMTProLight.otf);
+  }
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: FootLight;
   }
+
+  .float > img{
+    margin-bottom: -7px;
+    padding-bottom: 0px;
+  }
+
+  
 header, footer{
     height: 80px;
 }
@@ -16,6 +29,9 @@ header{
 
 body{
     background-image: url("Images/Dirt.jpg");
+}
+p{
+  padding-right: 20px;
 }
 
 nav{
@@ -69,6 +85,7 @@ a{
     background-color: #4D2D18;
     margin: 0 auto;
     padding: 40px;
+    font-size: 25px;
   }
   article > p{
     color: #FFFFFF;
@@ -78,10 +95,15 @@ a{
   }
   .float {
     float: right; 
-    margin: 5px;
+    margin: 15px;
+    margin-top: 5px;
     border: 5px solid #CABA9C;
     border-radius: 5px;
     margin-bottom: 0;
+   }
+
+   .CardList > a{
+    width: 650px;
    }
   .coolCard{
     border: 15px solid #CABA9C;
@@ -93,7 +115,7 @@ a{
     width: 150px;
     height: 150px;
     float: left;
-    
+    margin-right: 10px
   }
 
   .coolCard > p{
@@ -101,6 +123,10 @@ a{
     background-color: #8A6240;
     font-size: 50px;
     text-align: left;
+  }
+
+  .coolCard >a {
+    width: 650px;
   }
   .coolCard:hover{
     transform: scale(1.08);
