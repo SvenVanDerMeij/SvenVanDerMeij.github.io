@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="AntNest.css">
+</head>
+<body>
+
+        <!-- Begin eerste bubbelLink-->
+        <div class="ant-nest">
+        <div id="textBubble1" class="bubble text" style="margin-top: 50px; margin-left: 200px;" >
+        <p>    
+            this is my, at this moment in time, most recent project. This is a recreation of the Dustman boss fight from megaman 4, made in Unity.
+        </p>
+        </div>
+
+        <div id="imageBubble1" class="bubble image" style="margin-top:150px ; margin-left: 800px;">
+            <img src="Images/Dustman.webp" style="width: 200px; height: 200px;">
+        </div>
+        <div class="tunnel" id="tunnel1"></div>
+        </div>
+        <!--Einde eerste bubbelLink-->
+        <!--Begin tweede bubbelLink-->
+        <div class="ant-nest">
+            <div id="textBubble2" class="bubble text" style="margin-top: 100px; margin-left: 150px;" >
+                 <p> 
+                    What Dustman does in the bossfight is randomly cycle between 3 attacks: jumping around, trying to suck you in, and shooting at you.
+                    I recreated this bossfight by giving him a state machine with 4 total states, Idle, Jumping, Shooting, and Sucking.
+                    The only thing I changed from the original fight is that Dustman now always does the suck attack after jumping, This seemed like a
+                    more logical choice, since he is now closer to the player after jumping to suck him in.
+                 </p>
+            </div>
+
+            <div id="imageBubble2" class="bubble image" style="margin-top:50px ; margin-left: 550px; width: fit-content; height: fit-content;">
+                <img src="Images/DustSheet.jpg" alt="styleSheet" width="400px" height="fit-content">
+            </div>
+            <div class="tunnel" id="tunnel2"></div>
+        </div>
+        <!--Einde tweede bubbelLink-->
+
+   <script src="Tunnels.Js"></script>
+
+</body>
+
+<a href="IndexEn.html">
+    <img class="antLink" src="Images/DapperAntLink.png" width="320" height="192">
+    </a>
+    <a href="https://github.com/SvenVanDerMeij/StateMachine/tree/main">
+        <img class="gitLink" src="Images/GithubIcon.png" width="80" height="80">
+    </a>
+</html>

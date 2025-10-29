@@ -1,52 +1,63 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <head>
     <link rel="stylesheet" href="AntNest.css">
 </head>
-<article>
 <body>
-<h1>
-    <a href="https://github.com/MarcosMartinsCarvalho/Vertical-slice-Cuphead">
-        Cuphead vertical slice
-        </a>
-</h1>
-<p>
-    Cuphead vertical slice was an assignment where you as a group had to recreate a 10 second clip from the 2017 indie game cuphead
+    <div  class="bubble" style="align-self: center; margin-left: 40vw; margin-top: 100px; width: 400px;" >
+        <p>      
+            Cuphead vertical slice was an assignment where you as a group had to recreate a 10 second clip from the 2017 indie game cuphead
      to the best of your abilities.I want to showcase 3 of my contributions to the project, the boss, the movement of the platforms, and the animation system.
-</p>
-<h4>
-    The boss
-</h4>
-<div class="floatRight">
-    <img src="Images/VisualSheetCupheadEn.jpg" width="500" height="300">
-</div>
-<p>
-    I've made the ai for the boss explained in the image on the right, I'll talk about the ai for the platforms later, 
+
+        </p>
+    </div>
+    <div class="bubble" style="margin-left: 50vw; margin-top: 40px;">
+            <img src="Images/VisualSheetCuphead.jpg" width="600px" height="450px" >
+        </div>
+        <!-- Begin eerste bubbelLink-->
+        <div class="ant-nest">
+        <div id="textBubble1" class="bubble text" style="margin-top: -400px; margin-left: 240px;" >
+        <p>      
+   I've made the ai for the boss explained in the image on the right, I'll talk about the ai for the platforms later, 
     but first I'll show the code for the boss itself.
-</p>
-   
-    <img class="funnyBorder" src="Images/CupheadBossCode.png" width="400" height="200px">
-<p>
-    Here you can see that I did the Boss' vertical movement with a simple sine wave, making him gently bob up and down, je "Bonus"
-    varable makes it so that when the boss loses all it's health, the bonus drops below zero, making the boss plummet, and making the player win.
-</p>
-<h4>
-    The platforms
-</h4>
-<div class="floatRight">
-    <img src="Images/CupheadPlatformCode.png" >
-</div>
-<p>
-    The platforms are very simple, they start by checking their own y-position, and saving that, after that they're constantly moving
+        </p>
+        </div>
+
+        <div id="imageBubble1" class="bubble image" style="margin-top:20px ; margin-left: 200px; width: 410px;">
+            <img src="Images/CupheadBossCode.png" width="400px" height="200px">
+            <p> Here you can see that I did the Boss' vertical movement with a simple sine wave, making him gently bob up and down, je "Bonus"
+    varable makes it so that when the boss loses all it's health, the bonus drops below zero, making the boss plummet, and making the player win.</p>
+        </div>
+        <div class="tunnel" id="tunnel1"></div>
+        </div>
+        <!--Einde eerste bubbelLink-->
+
+
+        <!--Begin tweede bubbelLink-->
+        <div class="ant-nest">
+            <div id="imageBubble2" class="bubble image" style="margin-top:0px ; margin-left: 150px;">
+                <img src="Images/CupheadPlatformCode.png" >
+            </div>
+
+            <div id="textBubble2" class="bubble text" style="margin-top: 400px; margin-left: 750px; max-width: 500px;" >
+                 <p>      
+                   The platforms are very simple, they start by checking their own y-position, and saving that, after that they're constantly moving
     up and down with a less intense sine wave. When hit with a fireball, they fall off screen, at which point a timer starts counting up
     when this timer hits 4 seconds, the platform comes back up, until they've reached the y-position saved at the start. When they're back 
-    at their original positions, they become hittable again by the boss' fireball, and the player can jump on them again.        
-</p>
-<h4>
-    The animation
-</h4>
-<p>
-    The player's animation gave us a bit of trouble until I came up with a solution. The problem came from the fact that cuphead has 
+    at their original positions, they become hittable again by the boss' fireball, and the player can jump on them again.
+                 </p>
+            </div>
+
+            
+            <div class="tunnel" id="tunnel2"></div>
+        </div>
+        <!--Einde tweede bubbelLink-->
+         
+        <!--Begin derde bubbelLink-->
+        <div class="ant-nest">
+            <div id="textBubble3" class="bubble text" style="margin-top: 450px; margin-left: 250px; max-width: 400px;">
+                 <p>     
+                   The player's animation gave us a bit of trouble until I came up with a solution. The problem came from the fact that cuphead has 
     an animation for walking, jumping, shooting, and walking and shooting, and those animations overlapped a lot of the time. It wasn't uncommon for the game
     to play the walking animation, then jump, but because you were still moving mid air, the walking animation would play. My solution
     was to implement a binary system, where jumping, shooting and walking were each a bit in a 3-bit sequence, the first bit(4) being jumping, the second(2) beingshooting
@@ -54,18 +65,25 @@
     two bits and their respective value, for example if the player is walking and jumping at the same time, the integer will be 4+1=5
     and thus the corresponding animation plays, being the "walking while jumping" animation. If this is still unclear, I hope the 
     image I made below will clear things up.
-    </p>
-    <img class="funnyBorder" src="Images/cupheadVisuallSheet.png" width="600" height="410">
-</p>
-        
-<h1>
-</article>
+                 </p>
+            </div>
+
+            <div id="imageBubble3" class="bubble image" style="margin-top:-650px ; margin-left: 750px;">
+                <img src="Images/cupheadVisuallSheet.png" width="580" height="400"></img>
+            </div>
+            <div class="tunnel" id="tunnel3"></div>
+        </div>
+        <!--Einde derde bubbelLink-->
+
+       
+   <script src="Tunnels.Js"></script>
+
 </body>
 
-<a href="index.html">
-<img class="antLink" src="Images/DapperAntLink.png" width="320" height="192">
-</a>
-<a href="https://github.com/MarcosMartinsCarvalho/Vertical-slice-Cuphead">
-    <img class="gitLink" src="Images/GithubIcon.png" width="80" height="80">
-</a>
+<a href="IndexEn.html">
+    <img class="antLink" src="Images/DapperAntLink.png" width="320" height="192">
+    </a>
+    <a href="https://github.com/BAStudio/OperationStarfall/tree/ScytheMechanic">
+        <img class="gitLink" src="Images/GithubIcon.png" width="80" height="80">
+    </a>
 </html>

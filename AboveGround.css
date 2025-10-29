@@ -41,6 +41,41 @@
     align-items: center;
     
   }
+    .coolCard{
+    border: 15px solid #CABA9C;
+    border-radius: 15px;
+    width: 650px;
+    margin-top: 20px;
+  }
+  .coolCard > img{
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin-right: 10px
+  }
+
+  .coolCard > p{
+    height: 150px;
+    background-color: #8A6240;
+    font-size: 50px;
+    text-align: left;
+  }
+  ul{
+    list-style: none;
+    padding-bottom: 50px
+  }
+
+  .coolCard >a {
+    width: 650px;
+  }
+  .coolCard:hover{
+    transform: scale(1.08);
+    transition: 1s;
+  }
+  a{
+  color: #000000;
+  text-decoration: none;
+}
   
   footer{
     
@@ -66,7 +101,7 @@
   .grass {
     position: fixed;
     bottom:0;
-   height: 35%;
+   height: 15%;
    width: 100%;
    z-index: 2;
    margin-top: 50px;

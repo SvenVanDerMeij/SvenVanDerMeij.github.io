@@ -33,15 +33,20 @@ function connectBubbles(bubbleA, bubbleB, tunnel) {
 function updateTunnels() {
   const textBubble1 = document.getElementById("textBubble1");
   const textBubble2 = document.getElementById("textBubble2");
+  const textBubble3 = document.getElementById("textBubble3");
   const imageBubble1 = document.getElementById("imageBubble1");
   const imageBubble2 = document.getElementById("imageBubble2");
+  const imageBubble3 = document.getElementById("imageBubble3");
+
 
   const tunnel1 = document.getElementById("tunnel1");
   const tunnel2 = document.getElementById("tunnel2");
+  const tunnel3 = document.getElementById("tunnel3");
 
   // guard in case elements are missing
   if (textBubble1 && imageBubble1 && tunnel1) connectBubbles(textBubble1, imageBubble1, tunnel1);
   if (textBubble2 && imageBubble2 && tunnel2) connectBubbles(textBubble2, imageBubble2, tunnel2);
+  if (textBubble3 && imageBubble3 && tunnel3) connectBubbles(textBubble3, imageBubble3, tunnel3);
 }
 
 window.addEventListener("resize", updateTunnels);

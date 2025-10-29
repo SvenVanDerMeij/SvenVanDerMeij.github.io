@@ -7,83 +7,45 @@
 <body>
     <header>
     <p>
-        Big projects        
+        Big Projects
+        
     </p>
     </header>
 <article>
-    The big projects i want to talk about are cuphead vertical slice, and frog tower defense.
-    <h1>
-        <a href="https://github.com/MarcosMartinsCarvalho/Vertical-slice-Cuphead">
-            Cuphead vertical slice
-            </a>
-    </h1>
-    <p>
-        Cuphead vertical slice was an assignment where you as a group had to recreate a 10 second clip from the 2017 indie game cuphead
-         to the best of your abilities.I want to showcase 3 of my contributions to the project, the boss, the movement of the platforms, and the animation system.
-    </p>
-    <h4>
-        The boss
-    </h4>
-    <div class="floatRight">
-        <img src="Images/VisualSheetCupheadEn.jpg" width="500" height="300">
-    </div>
-    <p>
-        I've made the ai for the boss explained in the image on the right, I'll talk about the ai for the platforms later, 
-        but first I'll show the code for the boss itself.
-    </p>
-       
-        <img class="funnyBorder" src="Images/CupheadBossCode.png" width="400" height="200px">
-<p>
-        Here you can see that I did the Boss' vertical movement with a simple sine wave, making him gently bob up and down, je "Bonus"
-        varable makes it so that when the boss loses all it's health, the bonus drops below zero, making the boss plummet, and making the player win.
-    </p>
-    <h4>
-        The platforms
-    </h4>
-    <div class="floatRight">
-        <img src="Images/CupheadPlatformCode.png" >
-    </div>
-    <p>
-        The platforms are very simple, they start by checking their own y-position, and saving that, after that they're constantly moving
-        up and down with a less intense sine wave. When hit with a fireball, they fall off screen, at which point a timer starts counting up
-        when this timer hits 4 seconds, the platform comes back up, until they've reached the y-position saved at the start. When they're back 
-        at their original positions, they become hittable again by the boss' fireball, and the player can jump on them again.        
-    </p>
-    <h4>
-        The animation
-    </h4>
-    <p>
-        The player's animation gave us a bit of trouble until I came up with a solution. The problem came from the fact that cuphead has 
-        an animation for walking, jumping, shooting, and walking and shooting, and those animations overlapped a lot of the time. It wasn't uncommon for the game
-        to play the walking animation, then jump, but because you were still moving mid air, the walking animation would play. My solution
-        was to implement a binary system, where jumping, shooting and walking were each a bit in a 3-bit sequence, the first bit(4) being jumping, the second(2) beingshooting
-        and the third bit (1) being walking. When you start walking, the walking bit adds 1 to the animation integer, along with the other
-        two bits and their respective value, for example if the player is walking and jumping at the same time, the integer will be 4+1=5
-        and thus the corresponding animation plays, being the "walking while jumping" animation. If this is still unclear, I hope the 
-        image I made below will clear things up.
-        </p>
-        <img class="funnyBorder" src="Images/cupheadVisuallSheet.png" width="600" height="410">
-    <h1>
-        <a href="https://github.com/SvenVanDerMeij/TowerDefenseJaar2M1">
-            Frog tower defense
-            </a>
-    </h1>
-    <p>
-        Frog tower defense was an assignment where we had to make a tower defense game, simple as that. I decided to make a variation
-        of what you would expect from a typical tower defense. Instead of trying to defeat the enemies before they reach the end, I 
-        made the map have two exits, a good one and a bad one, where the objective for the player is to redirect the enemies towards the 
-        good exit, losing lives when they go into the bad exit. The only other thing I want to show off is how the enemies move, which you can see in the image below. Every other
-        aspect is a typical tower defense.
-         </p>
-    <img class="funnyBorder" src="Images/FrogReelEn.jpg" width="960" height="540">
-    <p>
-
-    </p>
-   </article>
-
-
+    The three big projects I want to highlight are the following:
+    <ul>
+      <li>
+        <a href ="FrogArmyNL.html">
+        <div class="coolCard">
+          <img src="Images/BlankFrogBackground.png" alt="test">
+          <p> Frog tower defense</p>
+        </div>
+      </a>
+      </li>
+      <li>
+        <a href="CupheadNL.html">
+        <div class="coolCard">
+          
+          <img src="Images/cuphead.png" alt="test">
+        
+          <p> Cuphead Vertical slice</p>
+        </div>
+      </a>
+      </li>
+      <li>
+        <a href="StarfallNL.html">
+        <div class="coolCard">
+          
+          <img src="Images/StarfallLogo.jpg" alt="test">
+        
+          <p> OperationStarfall</p>
+        </div>
+        </a>
+      </li>
+    </ul>
+</article>
 </body>
-<a href="IndexEn.html">
+<a href="index.html">
 <img class="antHill" src="Images/AnthillOutline.png" width="150" height="150">
 </a>
 <img class="grass" src="Images/Grass.png" alt="gras">

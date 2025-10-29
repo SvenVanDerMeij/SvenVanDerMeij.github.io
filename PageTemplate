@@ -4,17 +4,52 @@
     <link rel="stylesheet" href="AntNest.css">
 </head>
 <body>
-    <article>
-        <h1>
-           
-        </h1>
-        <p>
-          
+
+        <!-- Begin eerste bubbelLink-->
+        <div class="ant-nest">
+        <div id="textBubble1" class="bubble text" style="margin-top: 50px; margin-left: 200px;" >
+        <p>      
         </p>
-    </article>
+        </div>
+
+        <div id="imageBubble1" class="bubble image" style="margin-top:-150px ; margin-left: 800px;">
+            <img src="">
+        </div>
+        <div class="tunnel" id="tunnel1"></div>
+        </div>
+        <!--Einde eerste bubbelLink-->
+        <!--Begin tweede bubbelLink-->
+        <div class="ant-nest">
+            <div id="textBubble2" class="bubble text" style="margin-top: 400px; margin-left: 300px;" >
+                 <p>      
+                 </p>
+            </div>
+
+            <div id="imageBubble2" class="bubble image" style="margin-top:-300px ; margin-left: 750px;">
+                <img>
+            </div>
+            <div class="tunnel" id="tunnel2"></div>
+        </div>
+        <!--Einde tweede bubbelLink-->
+        <!--Begin derde bubbelLink-->
+        <div class="ant-nest">
+            <div id="textBubble3" class="bubble text" style="margin-top: 400px; margin-left: 300px;" >
+                 <p>      
+                 </p>
+            </div>
+
+            <div id="imageBubble3" class="bubble image" style="margin-top:-300px ; margin-left: 750px;">
+                <img>
+            </div>
+            <div class="tunnel" id="tunnel3"></div>
+        </div>
+        <!--Einde derde bubbelLink-->
+       
+   <script src="Tunnels.Js"></script>
+
 </body>
 
-<a href="IndexEn.html">
+<a href="index.html">
     <img class="antLink" src="Images/DapperAntLink.png" width="320" height="192">
     </a>
 </html>

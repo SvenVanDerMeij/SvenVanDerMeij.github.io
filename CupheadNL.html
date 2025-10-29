@@ -1,52 +1,63 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <head>
     <link rel="stylesheet" href="AntNest.css">
 </head>
-<article>
 <body>
-    <h1>
-        <a href="https://github.com/MarcosMartinsCarvalho/Vertical-slice-Cuphead">
-        Cuphead vertical slice
-        </a>
-    </h1>
-    <p>
-        Cuphead vertical slice was een <a href="UnityProjectsNL.html">unity </a>opdracht waar wij als groep een 10 seconden clip van de 2017 hit indie game zo goed mogelijk in unity na moesten maken. In het groepje van 3 waren mijn contributies hieraan de boss, de beweging van de platforms, en hoe het animatie systeem werkt.
-    </p>
-    <h4>
-        De boss
-    </h4>
-    <div class="float">
-        <img src="Images/VisualSheetCuphead.jpg" width="500" height="300">
-    </div>
-    <p>
-        Voor de bossfight heb ik de ai gemaakt voor de boss, uitgebeeld hier in de visual sheet. Hieronder zal ik het hebben over hoe de platforms zelf werken
-        maar voor nu kan ik wat code laten zien.
-    </p>
-       
-        <img class="funnyBorder" src="Images/CupheadBossCode.png" width="400" height="200px">
-<p>
-        waarin te zien is dat ik de hoogte van de boss heb gedaan met een simpele sinusgolf, waardoor hij vlot maar rustig omhoog en omlaag blijft gaan. Het Bonus deel hieraan zorgt ervoor dat als de boss geen health meer heeft, hij zal zakken, waar hij zal verdwijnen en de speler wint.
-    </p>
-    <h4>
-        De platforms
-    </h4>
-    <div class="float">
-        <img src="Images/CupheadPlatformCode.png" >
-    </div>
-    <p>
-        De platforms werken simpel, aan het begin nemen ze allemaal hun huidige y-positie op, daarna
-        bewegen ze constant langzaam omhoog en omlaag, ook met een sinusgolf, wanneer ze geraakt worden door een vuurbal vallen ze
-        totdat ze net offscreen zijn. Op dat punt begint er een timer op te tellen, wanneer deze timer 4 seconden aantikt komt het platform 
-        weer omhoog totdat hun y-positie hetzelfde is als de y-positie die ze aan het begin opnamen, en gaan ze weer in een staat waar
-        de speler op ze kan staan, en ze weer geraakt kunnen worden door de boss.
+    <div  class="bubble" style="align-self: center; margin-left: 40vw; margin-top: 100px; width: 400px;" >
+        <p>      
+             Cuphead vertical slice was een <a href="UnityProjectsNL.html">unity </a>opdracht waar wij als groep een 10 seconden clip van de 2017 hit indie game zo goed mogelijk in unity na moesten maken. In het groepje van 3 waren mijn contributies hieraan de boss, de beweging van de platforms, en hoe het animatie systeem werkt.
+        </p>
+
         
-    </p>
-    <h4>
-        De animatie
-    </h4>
-    <p>
-        De animatie van cuphead gaf ons team wat problemen totdat ik met mijn oplossing kwam. Het probleem was dat cuphead een animatie
+    </div>
+    <div class="bubble" style="margin-left: 50vw; margin-top: 40px;">
+            <img src="Images/VisualSheetCuphead.jpg" width="600px" height="450px" >
+        </div>
+        <!-- Begin eerste bubbelLink-->
+        <div class="ant-nest">
+        <div id="textBubble1" class="bubble text" style="margin-top: -400px; margin-left: 240px;" >
+        <p>      
+            Voor de bossfight heb ik de ai gemaakt voor de boss, uitgebeeld hier in de visual sheet. Hieronder zal ik het hebben over hoe de platforms zelf werken
+        maar voor nu kan ik wat code laten zien.
+        </p>
+        </div>
+
+        <div id="imageBubble1" class="bubble image" style="margin-top:20px ; margin-left: 200px; width: 410px;">
+            <img src="Images/CupheadBossCode.png" width="400px" height="200px">
+            <p>Hier is te zien dat ik de hoogte van de boss heb gedaan met een simpele sinusgolf, waardoor hij vlot maar rustig omhoog en omlaag blijft gaan. Het Bonus deel hieraan zorgt ervoor dat als de boss geen health meer heeft, hij zal zakken, waar hij zal verdwijnen en de speler wint.</p>
+        </div>
+        <div class="tunnel" id="tunnel1"></div>
+        </div>
+        <!--Einde eerste bubbelLink-->
+
+
+        <!--Begin tweede bubbelLink-->
+        <div class="ant-nest">
+            <div id="imageBubble2" class="bubble image" style="margin-top:0px ; margin-left: 150px;">
+                <img src="Images/CupheadPlatformCode.png" >
+            </div>
+
+            <div id="textBubble2" class="bubble text" style="margin-top: 400px; margin-left: 750px;" >
+                 <p>      
+                    De platforms werken simpel, aan het begin nemen ze allemaal hun huidige y-positie op, daarna
+                    bewegen ze constant langzaam omhoog en omlaag, ook met een sinusgolf, wanneer ze geraakt worden door een vuurbal vallen ze
+                    totdat ze net offscreen zijn. Op dat punt begint er een timer op te tellen, wanneer deze timer 4 seconden aantikt komt het platform 
+                    weer omhoog totdat hun y-positie hetzelfde is als de y-positie die ze aan het begin opnamen, en gaan ze weer in een staat waar
+                    de speler op ze kan staan, en ze weer geraakt kunnen worden door de boss.
+                 </p>
+            </div>
+
+            
+            <div class="tunnel" id="tunnel2"></div>
+        </div>
+        <!--Einde tweede bubbelLink-->
+         
+        <!--Begin derde bubbelLink-->
+        <div class="ant-nest">
+            <div id="textBubble3" class="bubble text" style="margin-top: 330px; margin-left: 250px; max-width: 400px;">
+                 <p>     
+                    De animatie van cuphead gaf ons team wat problemen totdat ik met mijn oplossing kwam. Het probleem was dat cuphead een animatie
         heeft voor lopen, een animatie voor schieten, een animatie voor springen, en een animatie voor stil staan, alleen cuphead moet 
         ook kunnen springen en schieten, of lopen en schieten, en die animaties overlapte vaak, de game kreeg tegelijkertijd te horen:
         "loop", "loop en schiet" en "schiet". Mijn oplossing die ik hierop gaf is dat we een binair systeem implementeren, de int die 
@@ -54,18 +65,26 @@
         in dit systeem. springen is 4, schieten is 2, lopen is 1. wanneer je begint te lopen wordt 1 toegevoegd aan de animatie int,
         zelfde met 2 op schieten en 4 op springen. dus stel cuphead springt en loopt, dan wordt 4 voor springen en 1 voor lopen toegevoegd
         aan de int. Vervolgens leest de animator dat de animatie int 5 is, en speelt het dus de animatie af voor lopen en springen.
-        Als dit nogsteeds onduidelijk is heb ik hieronder een visual sheet gemaakt om het verder uit te leggen.
-        <img  src="Images/cupheadVisuallSheet.png" width="580" height="400">
-        </p>
-        
-    <h1>
-    </article>
+        Als dit nogsteeds onduidelijk is heb ik hieronder een visual sheet gemaakt om het verder uit te leggen. 
+                 </p>
+            </div>
+
+            <div id="imageBubble3" class="bubble image" style="margin-top:-650px ; margin-left: 750px;">
+                <img src="Images/cupheadVisuallSheet.png" width="580" height="400"></imgsrc>
+            </div>
+            <div class="tunnel" id="tunnel3"></div>
+        </div>
+        <!--Einde derde bubbelLink-->
+
+       
+   <script src="Tunnels.Js"></script>
+
 </body>
 
 <a href="index.html">
     <img class="antLink" src="Images/DapperAntLink.png" width="320" height="192">
     </a>
-    <a href="https://github.com/MarcosMartinsCarvalho/Vertical-slice-Cuphead">
+    <a href="https://github.com/BAStudio/OperationStarfall/tree/ScytheMechanic">
         <img class="gitLink" src="Images/GithubIcon.png" width="80" height="80">
     </a>
 </html>
